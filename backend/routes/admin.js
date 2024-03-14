@@ -1,11 +1,11 @@
-// backend/routes/admin.js
-const express = require('express');
-const multer = require('multer');
-const xlsx = require('xlsx');
-const Student = require('../models/student');
+import express from 'express';
+import multer from 'multer';
+import xlsx from 'xlsx';
+import Student from '../models/students.cjs';
+
+// rest of your code
 
 const router = express.Router();
-
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
@@ -27,4 +27,4 @@ router.post('/uploadFile', upload.single('file'), async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

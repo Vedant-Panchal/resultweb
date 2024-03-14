@@ -16,6 +16,7 @@
     "url": "https://github.com/kushal-unjiya/resultweb/issues"
   },
   "homepage": "https://github.com/kushal-unjiya/resultweb#readme",
+  "type": "module",
   "dependencies": {
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",

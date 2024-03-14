@@ -25,9 +25,11 @@ function Admin() {
 
   return (
     <div>
+      
       <h1>Admin Panel</h1>
       <input type="file" accept=".xlsx" onChange={handleFileChange} />
       <button onClick={handleUpload}>Upload Data</button>
+      
     </div>
   );
 }
